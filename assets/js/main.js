@@ -39,6 +39,9 @@
                   $('body').toggleClass('hamburger-on');
             });
 
+            // NOTE TO ME!
+            // rewrite the button custom to change the hamburger to X icon
+
       });
 
 
