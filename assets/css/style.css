@@ -357,16 +357,16 @@ footer {
 @media (min-width: 576px) {
   section.newsletter .subscribe-wrap {
     display: grid; }
-    section.newsletter .subscribe-wrap .subscribe-form {
+    section.newsletter .subscribe-wrap .subscribe-holder .subscribe-form {
       display: inline-flex;
       flex-direction: row; }
-      section.newsletter .subscribe-wrap .subscribe-form .subscribe-submit, section.newsletter .subscribe-wrap .subscribe-form .subscribe-input {
+      section.newsletter .subscribe-wrap .subscribe-holder .subscribe-form .subscribe-submit, section.newsletter .subscribe-wrap .subscribe-holder .subscribe-form .subscribe-input {
         border-radius: 25px; }
-      section.newsletter .subscribe-wrap .subscribe-form .subscribe-input {
+      section.newsletter .subscribe-wrap .subscribe-holder .subscribe-form .subscribe-input {
         margin: 0;
         background-color: #f2f9fa;
         border-radius: 25px 0 0 25px; }
-      section.newsletter .subscribe-wrap .subscribe-form .subscribe-submit {
+      section.newsletter .subscribe-wrap .subscribe-holder .subscribe-form .subscribe-submit {
         color: #fff;
         background-color: #009eff;
         border-radius: 0 25px 25px 0; }

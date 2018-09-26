@@ -466,28 +466,31 @@ footer {
 
       .subscribe-wrap{
          display: grid;
+            .subscribe-holder {
 
-         .subscribe-form {
-            display: inline-flex;
-            flex-direction: row;
+                .subscribe-form {
+                    display: inline-flex;
+                    flex-direction: row;
 
-            .subscribe-submit, .subscribe-input{
-               border-radius: 25px;
+                    .subscribe-submit, .subscribe-input{
+                       border-radius: 25px;
+                    }
+
+                    .subscribe-input {
+                       margin: 0;
+                       background-color: #f2f9fa;
+                       border-radius: 25px 0 0 25px;
+                    }
+
+                    .subscribe-submit {
+                       color: $white;
+                       background-color: $primary-color;
+                       border-radius: 0 25px 25px 0;
+                    }
+
+                 }
             }
 
-            .subscribe-input {
-               margin: 0;
-               background-color: #f2f9fa;
-               border-radius: 25px 0 0 25px;
-            }
-
-            .subscribe-submit {
-               color: $white;
-               background-color: $primary-color;
-               border-radius: 0 25px 25px 0;
-            }
-
-         }
       }
    }
    //end@media section.newsletter576px
