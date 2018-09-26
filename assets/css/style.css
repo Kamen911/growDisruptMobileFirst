@@ -1,15 +1,15 @@
 /* Variables */
-body {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5; }
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-rendering: optimizeLegibility; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5; }
 
 ul {
   list-style: none;
@@ -24,6 +24,12 @@ img {
 
 input {
   border: none; }
+
+input:focus {
+  outline: none; }
+
+p {
+  font-size: 1.05rem; }
 
 a {
   color: inherit;
@@ -40,9 +46,6 @@ h1 {
 h2 {
   font-weight: 400;
   font-size: 2.1rem; }
-
-p {
-  font-size: 1.05rem; }
 
 /* Utility classes & Bootsrap */
 .btn-primary {
@@ -102,7 +105,7 @@ header {
     header .navbar .navbar-collapse.show {
       top: 0; }
 
-section.showcase {
+main section.showcase {
   color: #fff;
   display: flex;
   padding: 100px 0;
@@ -112,7 +115,7 @@ section.showcase {
   background-position: center;
   background-image: url(../img/bg.png), linear-gradient(76deg, #1fb4b7 0, #7fe3b7 100%);
   /* scroll-indicator */ }
-  section.showcase .scroll-indicator {
+  main section.showcase .scroll-indicator {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -124,11 +127,11 @@ section.showcase {
     width: 95px;
     height: 95px;
     border-radius: 50px; }
-    section.showcase .scroll-indicator .scroll-icon {
+    main section.showcase .scroll-indicator .scroll-icon {
       overflow: hidden; }
-      section.showcase .scroll-indicator .scroll-icon a {
+      main section.showcase .scroll-indicator .scroll-icon a {
         padding-top: 60px; }
-        section.showcase .scroll-indicator .scroll-icon a span {
+        main section.showcase .scroll-indicator .scroll-icon a span {
           position: absolute;
           top: 25%;
           left: 50%;
@@ -138,7 +141,7 @@ section.showcase {
           border: 2px solid #fff;
           border-radius: 50px;
           box-sizing: border-box; }
-          section.showcase .scroll-indicator .scroll-icon a span::before {
+          main section.showcase .scroll-indicator .scroll-icon a span::before {
             position: absolute;
             top: 10px;
             left: 50%;
@@ -173,116 +176,114 @@ section.showcase {
     opacity: 0; }
   100% {
     opacity: 0; } }
-section.library .card-category {
+main section.library .card-category {
   padding: 0.2rem 1.8rem;
   border-radius: 5px;
   color: #fff; }
-section.library .library-wrap {
+main section.library .library-wrap {
   text-align: center; }
-  section.library .library-wrap .library-info {
+  main section.library .library-wrap .library-info {
     margin: 10.6rem 0 3rem 0;
     text-align: center; }
-    section.library .library-wrap .library-info .library-content-wrap {
+    main section.library .library-wrap .library-info .library-content-wrap {
       text-align: center; }
-      section.library .library-wrap .library-info .library-content-wrap .library-content-title {
+      main section.library .library-wrap .library-info .library-content-wrap .library-content-title {
         margin-bottom: 1.2rem;
         font-size: 1.7rem; }
-  section.library .library-wrap .cards-wrap {
+  main section.library .library-wrap .cards-wrap {
     display: flex;
     justify-content: space-around; }
-    section.library .library-wrap .cards-wrap > div {
+    main section.library .library-wrap .cards-wrap > div {
       margin-bottom: 3.75rem; }
-    section.library .library-wrap .cards-wrap .card {
+    main section.library .library-wrap .cards-wrap .card {
       box-shadow: 0px 0px 34px 13px rgba(0, 0, 0, 0.09);
       -webkit-box-shadow: 0px 0px 34px 13px rgba(0, 0, 0, 0.09);
       -moz-box-shadow: 0px 0px 34px 13px rgba(0, 0, 0, 0.09); }
-    section.library .library-wrap .cards-wrap .card-body {
+    main section.library .library-wrap .cards-wrap .card-body {
       text-align: start; }
-    section.library .library-wrap .cards-wrap .card-title {
+    main section.library .library-wrap .cards-wrap .card-title {
       margin-top: 1rem; }
-    section.library .library-wrap .cards-wrap .card-text {
+    main section.library .library-wrap .cards-wrap .card-text {
       font-size: 0.9rem; }
-    section.library .library-wrap .cards-wrap .category-topic {
+    main section.library .library-wrap .cards-wrap .category-topic {
       background-color: #3ccbfb; }
-    section.library .library-wrap .cards-wrap .category-course {
+    main section.library .library-wrap .cards-wrap .category-course {
       background-color: #82d4a1; }
-    section.library .library-wrap .cards-wrap .category-tools {
+    main section.library .library-wrap .cards-wrap .category-tools {
       background-color: #e98181; }
-  section.library .library-wrap .more-info {
+  main section.library .library-wrap .more-info {
     display: none; }
-  section.library .library-wrap .load-more {
+  main section.library .library-wrap .load-more {
     justify-content: space-around;
     border-radius: 25px; }
-
-section.topics {
+main section.topics {
   text-align: center;
   margin-top: 12.2rem;
   padding-top: 8.65rem;
   padding-bottom: 11.5rem;
   background-image: linear-gradient(0deg, #f6f7fd 100%, #ffffff 100%); }
-  section.topics .topics-nav {
+  main section.topics .topics-nav {
     height: 100%;
     display: flex;
     padding: 1.5rem 0 2.5rem; }
-    section.topics .topics-nav .topics-load {
+    main section.topics .topics-nav .topics-load {
       display: flex;
       justify-content: center;
       border-bottom: none; }
-      section.topics .topics-nav .topics-load .nav-link {
+      main section.topics .topics-nav .topics-load .nav-link {
         color: #6b7c93;
         white-space: nowrap;
         border: none;
         border-bottom: 2px solid #F6F7FD; }
-        section.topics .topics-nav .topics-load .nav-link.active {
+        main section.topics .topics-nav .topics-load .nav-link.active {
           background-color: inherit;
           border-bottom: 2px solid #009eff; }
-  section.topics .topics-body {
+  main section.topics .topics-body {
     padding-top: 3.03rem; }
-    section.topics .topics-body .tab-content .library-wrap {
+    main section.topics .topics-body .tab-content .library-wrap {
       display: grid;
       -ms-grid-column-align: center;
       grid-column-gap: 2.34rem;
       grid-row-gap: 2.71rem; }
-      section.topics .topics-body .tab-content .library-wrap .card {
+      main section.topics .topics-body .tab-content .library-wrap .card {
         flex-direction: row;
         border: none;
         box-shadow: 0px 0px 34px 13px rgba(0, 0, 0, 0.09);
         -webkit-box-shadow: 0px 0px 34px 13px rgba(0, 0, 0, 0.09);
         -moz-box-shadow: 0px 0px 34px 13px rgba(0, 0, 0, 0.09); }
-        section.topics .topics-body .tab-content .library-wrap .card .card-img-top {
+        main section.topics .topics-body .tab-content .library-wrap .card .card-img-top {
           height: 100%;
           max-width: 161px; }
-        section.topics .topics-body .tab-content .library-wrap .card .card-body {
+        main section.topics .topics-body .tab-content .library-wrap .card .card-body {
           padding: 1rem 1rem 0;
           text-align: start; }
-          section.topics .topics-body .tab-content .library-wrap .card .card-body .author {
+          main section.topics .topics-body .tab-content .library-wrap .card .card-body .author {
             margin-top: 1.5rem;
             font-size: 0.75rem;
             text-transform: uppercase; }
-            section.topics .topics-body .tab-content .library-wrap .card .card-body .author a {
+            main section.topics .topics-body .tab-content .library-wrap .card .card-body .author a {
               color: #009eff; }
-
-section.newsletter {
+main section.newsletter {
   text-align: center;
   background-image: linear-gradient(100deg, #3587f2 30%, #9560b4 80%);
   color: #fff; }
-  section.newsletter .subscribe-wrap {
+  main section.newsletter .subscribe-wrap {
     padding: 7rem 0 8rem; }
-    section.newsletter .subscribe-wrap .subscribe-form {
+    main section.newsletter .subscribe-wrap .subscribe-form {
       font-size: 1rem;
       display: block;
       margin: 0 auto;
       margin-top: 2rem; }
-      section.newsletter .subscribe-wrap .subscribe-form input {
+      main section.newsletter .subscribe-wrap .subscribe-form input {
         display: inline-flex; }
-      section.newsletter .subscribe-wrap .subscribe-form .subscribe-input, section.newsletter .subscribe-wrap .subscribe-form .subscribe-submit {
+      main section.newsletter .subscribe-wrap .subscribe-form .subscribe-input, main section.newsletter .subscribe-wrap .subscribe-form .subscribe-submit {
         border-radius: 25px; }
-      section.newsletter .subscribe-wrap .subscribe-form .subscribe-input {
+      main section.newsletter .subscribe-wrap .subscribe-form .subscribe-input {
         width: 100%;
         background-color: #f2f9fa;
         padding: 1rem 0 1rem 3.28rem;
         margin-bottom: 1rem; }
-      section.newsletter .subscribe-wrap .subscribe-form .subscribe-submit {
+      main section.newsletter .subscribe-wrap .subscribe-form .subscribe-submit {
         color: #fff;
         background-color: #009eff;
         padding: 1.23rem 2.65rem; }
