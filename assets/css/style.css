@@ -258,11 +258,13 @@ main section.topics {
           padding: 1rem 1rem 0;
           text-align: start; }
           main section.topics .topics-body .tab-content .library-wrap .card .card-body .author {
-            margin-top: 1.5rem;
+            margin: 0;
             font-size: 0.75rem;
             text-transform: uppercase; }
-            main section.topics .topics-body .tab-content .library-wrap .card .card-body .author a {
+            main section.topics .topics-body .tab-content .library-wrap .card .card-body .author span {
               color: #009eff; }
+          main section.topics .topics-body .tab-content .library-wrap .card .card-body .card-title {
+            margin: 1rem 0 0 0; }
 main section.newsletter {
   text-align: center;
   background-image: linear-gradient(100deg, #3587f2 30%, #9560b4 80%);
@@ -379,9 +381,6 @@ footer {
   .showcase .lead-wrap {
     padding-top: 2rem; }
 
-  section.topics .card-title {
-    padding-top: 1rem; }
-
   section.newsletter .subscribe-wrap {
     display: grid;
     grid-template-columns: 1fr 6fr 1fr; }
@@ -420,12 +419,18 @@ footer {
     padding: 0 4.06rem; }
     section.topics .topics-body .tab-content .library-wrap .card .card-body h6 {
       padding-right: 1rem; } }
+@media (max-width: 347px) {
+  section.topics .topics-body .tab-content .library-wrap a .card .card-body .author {
+    font-size: 0.45rem; }
+  section.topics .topics-body .tab-content .library-wrap a .card .card-body .card-title {
+    margin-top: 0.5rem;
+    font-size: 0.65rem; } }
 @media (max-width: 387px) {
-  section.topics .topics-body .tab-content .library-wrap .card .card-img-top {
-    max-width: 141px; }
-  section.topics .topics-body .tab-content .library-wrap .card .card-body .author {
-    font-size: 0.55rem; }
-  section.topics .topics-body .tab-content .library-wrap .card .card-body .card-title {
+  section.topics .topics-body .tab-content .library-wrap a .card .card-img-top {
+    max-width: 39%; }
+  section.topics .topics-body .tab-content .library-wrap a .card .card-body .author {
+    font-size: 0.65rem; }
+  section.topics .topics-body .tab-content .library-wrap a .card .card-body .card-title {
     font-size: 0.75rem; } }
 @media (max-width: 991px) {
   header .navbar .navbar-collapse {
